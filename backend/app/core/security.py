@@ -3,7 +3,7 @@ from datetime import UTC, datetime, timedelta
 import jwt
 from argon2 import PasswordHasher
 
-from src.core.config import settings
+from app.core.config import settings
 
 password_hasher = PasswordHasher()
 

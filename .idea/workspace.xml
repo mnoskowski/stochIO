@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="daa2050a-7116-452f-b650-ef2bec509271" name="Changes" comment="" />
+    <list default="true" id="daa2050a-7116-452f-b650-ef2bec509271" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/api/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/api/questions.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/questions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/api/questionsfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/questionsfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/core/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/core/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/schemas/security_schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/security_schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/core/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/srs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/srs/fsrs.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/srs/fsrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/srs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/util/auth_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/util/migrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/scripts/migrate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/test_db.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,29 +46,32 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0043778985981104" />
-      <entry key="MS500" value="1.547971698567235" />
-      <entry key="S2" value="3.073548872808429" />
-      <entry key="S5" value="6.691552693838546" />
-      <entry key="S10" value="11.62921912933553" />
-      <entry key="S30" value="18.929071308034818" />
-      <entry key="S60" value="22.234879413875813" />
-      <entry key="M2" value="27.10126101051283" />
-      <entry key="M5" value="38.63985913016559" />
-      <entry key="M10" value="49.71008620220638" />
-      <entry key="M15" value="55.769011591993745" />
-      <entry key="M30" value="63.88805227825031" />
-      <entry key="H1" value="68.99532083550667" />
-      <entry key="H2" value="71.87436817386273" />
-      <entry key="H4" value="73.40484038392503" />
-      <entry key="D1" value="74.72951218393891" />
-      <entry key="W1" value="74.96124373150919" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000001739303814" />
+      <entry key="S60" value="1.0025846164402472" />
+      <entry key="M2" value="1.3376875596904723" />
+      <entry key="M5" value="8.579271355413493" />
+      <entry key="M10" value="27.131557640098812" />
+      <entry key="M15" value="43.21184636014124" />
+      <entry key="M30" value="72.78620164556635" />
+      <entry key="H1" value="96.78610306260668" />
+      <entry key="H2" value="112.34507902534425" />
+      <entry key="H4" value="121.2447043425358" />
+      <entry key="D1" value="129.31084398820914" />
+      <entry key="W1" value="130.75708937638" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -69,23 +93,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9768774465734325" />
-      <entry key="MS500" value="1.5380625036513762" />
-      <entry key="S2" value="3.068130114996598" />
-      <entry key="S5" value="6.686817404702809" />
-      <entry key="S10" value="11.625052748059579" />
-      <entry key="S30" value="18.926736618682735" />
-      <entry key="S60" value="22.232845287375326" />
-      <entry key="M2" value="27.098306234592414" />
-      <entry key="M5" value="38.63655074546259" />
-      <entry key="M10" value="49.70734910060534" />
-      <entry key="M15" value="55.766763887579756" />
-      <entry key="M30" value="63.88663051620598" />
-      <entry key="H1" value="68.99451245711826" />
-      <entry key="H2" value="71.8739359229293" />
-      <entry key="H4" value="73.40461671968744" />
-      <entry key="D1" value="74.72947381185216" />
-      <entry key="W1" value="74.96123822232856" />
+      <entry key="MS100" value="0.9526379980439373" />
+      <entry key="MS500" value="0.9903428719330246" />
+      <entry key="S2" value="0.9975769252644544" />
+      <entry key="S5" value="0.9990300646389034" />
+      <entry key="S10" value="0.9995149146655609" />
+      <entry key="S30" value="0.9998384526460308" />
+      <entry key="S60" value="1.0025035991231812" />
+      <entry key="M2" value="1.3376368295833063" />
+      <entry key="M5" value="8.579105875479426" />
+      <entry key="M10" value="27.13104608423497" />
+      <entry key="M15" value="43.211120730714704" />
+      <entry key="M30" value="72.78537916043132" />
+      <entry key="H1" value="96.78547044689628" />
+      <entry key="H2" value="112.3446847582615" />
+      <entry key="H4" value="121.24448398902804" />
+      <entry key="D1" value="129.31080366761256" />
+      <entry key="W1" value="130.7570835230218" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -106,6 +130,8 @@
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -204,7 +230,7 @@
       <option name="presentableId" value="Default" />
       <updated>1794176231982</updated>
       <workItem from="1794176233000" duration="1595000" />
-      <workItem from="1794237102354" duration="975000" />
+      <workItem from="1794237102354" duration="2561000" />
     </task>
     <servers />
   </component>

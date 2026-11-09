@@ -6,16 +6,16 @@ from fastapi import APIRouter, Cookie, Depends, FastAPI, HTTPException, Response
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
-from src.core.config import settings
-from src.core.database import db
-from src.schemas.security_schemas import Token
-from src.schemas.user import RegisterRequest, User
-from src.security import (
+from app.core.config import settings
+from app.core.database import db
+from app.core.security import (
     create_access_token,
     decode_token,
     get_password_hash,
     verify_password,
 )
+from app.schemas.security_schemas import Token
+from app.schemas.user import RegisterRequest, User
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 router = APIRouter(prefix="/auth", tags=["auth"])

@@ -2,7 +2,7 @@ from collections.abc import AsyncGenerator
 
 import asyncpg
 
-from src.core.config import settings
+from app.core.config import settings
 
 
 class Database:

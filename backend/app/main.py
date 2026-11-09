@@ -5,11 +5,11 @@ import asyncpg
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.api.auth import get_current_user
-from src.api.auth import router as auth_router
-from src.api.questions import router as questions_router
-from src.api.questionsfs import router as questionsfs_router
-from src.core.database import db
+from app.api.auth import get_current_user
+from app.api.auth import router as auth_router
+from app.api.questions import router as questions_router
+from app.api.questionsfs import router as questionsfs_router
+from app.core.database import db
 
 
 @asynccontextmanager
