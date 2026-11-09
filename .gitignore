@@ -1,0 +1,6 @@
+__pycache__
+.env
+.venv
+.python-version
+DOCS/stack-local-reference.md
+skills

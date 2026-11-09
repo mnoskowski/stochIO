@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: stochio
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+    ports: ["5433:5432"]
+  backend:
+    build: ./backend
+    depends_on: [db]
+    ports: ["8000:8000"]
+    environment:
+      DATABASE_URL: postgresql://dev:dev@db/stochio
+
