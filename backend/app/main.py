@@ -7,7 +7,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.auth import get_current_user
 from app.api.auth import router as auth_router
-from app.api.questions import router as questions_router
 from app.api.questionsfs import router as questionsfs_router
 from app.core.database import db
 
@@ -17,6 +16,7 @@ async def lifespan(app: FastAPI):
     await db.connect()
     yield
     await db.disconnect()
+
 
 app = FastAPI(lifespan=lifespan)
 
@@ -29,16 +29,18 @@ app.add_middleware(
 )
 app.include_router(auth_router)
 app.include_router(questionsfs_router)
-app.include_router(questions_router)
+
 
 @app.get("/")
 async def read_root():
     return {"message": "Hello World"}
 
+
 @app.get("/health")
-async def health(conn: asyncpg.Connection = Depends(db.acquire)):
+async def health(conn: Annotated[asyncpg.Connection, Depends(db.acquire)]):
     await conn.execute("SELECT 1")
     return {"status": "ok"}
+
 
 # route to test auth
 @app.get("/protected/")
