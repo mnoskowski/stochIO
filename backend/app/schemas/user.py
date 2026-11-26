@@ -1,5 +1,6 @@
 from pydantic import BaseModel, EmailStr
 
+
 class RegisterRequest(BaseModel):
     username: str
     password: str
@@ -17,3 +18,6 @@ class User(BaseModel):
     first_name: str | None = None
     last_name: str | None = None
 
+class LoginRequest(BaseModel):
+    username: str
+    password: str
