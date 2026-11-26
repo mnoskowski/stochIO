@@ -21,7 +21,6 @@ dev = [
     "pytest>=9.1.1",
     "ruff>=0.17.4",
     "pytest-asyncio>=1.4.1.post1",
-    "httpx>=0.28.1",
 ]
 
 [tool.ruff]
@@ -59,3 +58,4 @@ analyzeUnannotatedFunctions = true
 # Auto so every test runs without a decorator
 asyncio_mode="auto"
 pythonpath=["."]
+asyncio_default_fixture_loop_scope="fixture-scope"

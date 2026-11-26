@@ -3,7 +3,8 @@ from collections.abc import AsyncIterator
 from urllib.parse import urlparse
 
 import pytest
-from httpx import ASGITransport, AsyncClient
+from httpx2 import ASGITransport, AsyncClient
+
 
 TEST_DATABASE_URL = os.environ.get(
     "TEST_DATABASE_URL", "postgresql://dev:dev@localhost:5433/stochio_test"
@@ -16,7 +17,7 @@ if not suffix.endswith("_test"):
 os.environ["DATABASE_URL"] = TEST_DATABASE_URL
 
 # Settings() reads env at import (app imports it) thus app must be imported after
-from app.main import app  # noqa: E402
+from app.main import app, db  # noqa: E402
 
 
 @pytest.fixture
@@ -25,4 +26,6 @@ async def client() -> AsyncIterator[AsyncClient]:
         async with AsyncClient(
             transport=ASGITransport(app=app), base_url="http://test"
         ) as client:
+            async with db.pool.acquire() as conn:
+                await conn.execute("TRUNCATE users RESTART IDENTITY CASCADE")
             yield client
