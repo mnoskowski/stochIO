@@ -139,6 +139,3 @@ async def logout(response: Response):
 @router.get("/me", response_model=User)
 async def read_me(current_user: Annotated[User, Depends(get_current_user)]) -> User:
     return current_user
-@router.get("/me/cookie")
-async def get_cookie(access_cookie: str = Cookie(None)):
-    pass
